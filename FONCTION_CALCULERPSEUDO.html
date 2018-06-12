@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<html>
+    
+    <head>
+        
+        <title> FONCTION_CALCULERPSEUDO </title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Justin-Alemany">
+        <script src="FONCTION_CALCULERPSEUDO.JS"></script>
+        <script src="FONCTION_CALCULERSIGNE.js"></script>
+        
+    </head>
+    
+    <body onload="remplirSelect()">
+        
+        <form action="" onsubmit="mafonction('champ_utilisateur')" >
+        <br>
+        <br>
+        <br>
+        <center><div> EXERCICE FONCTION CALCULER LE PSEUDO </div></center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="text" id="nom_utilisateur" required="required" placeholder="veuillez renseigner ici votre nom" size="100"> : Nom
+        <br>
+        <br>
+        <input type="text" id="prenom_utilisateur" required="required" placeholder="veuillez renseigner ici votre prénom" size="100"> : Prénom
+        <br>
+        <br>
+        <input type="date" id="anniversaire_utilisateur" required="required"> : Date d'anniversaire
+        <br>
+        <br>
+        <input type="text" id="champ_pseudo" name="champ_pseudo" readonly="readonly">
+        <br>
+        <br>
+        <input type="button" name="valider" id="valider" value="valider" onclick="calculSigne()"> 
+        <br>
+        <br>
+        <div> ENONCE </div>
+        <br>
+        <br>
+        <p>Ecrire un script qui calcule le pseudo de l'utilisateur, lorsque les champs nomUtilisateur,
+        prenomUtilisateur et les champs constituant la date de naissance ont été remplis, de la
+        façon suivante :<br>
+        • Le pseudo = signe astrologique + (valeur numérique du nom+valeur numérique du
+        prénom).<br>
+        • Une fois le pseudo calculé, le bouton Valider pourra être activé.  </p>
+        
+        </form>
+        
+    </body>
+    
+</html>
